@@ -1,4 +1,4 @@
-import { AxiosIcon, CSSIcon, GitIcon, GithubIcon, HTMLIcon, JavascriptIcon, JestIcon, MongoIcon, MySQLIcon, NPMIcon, NextIcon, NodeJSIcon, PostmanIcon, ReactIcon, ReduxIcon, SassIcon, TailwindIcon, TypescriptIcon, WebpackIcon } from "../utils/Devicon"
+import { AxiosIcon, CSSIcon, GitIcon, GithubIcon, HTMLIcon, JavaIcon, JavascriptIcon, JestIcon, MongoIcon, MySQLIcon, NPMIcon, NextIcon, NodeJSIcon, PostmanIcon, ReactIcon, ReduxIcon, SassIcon, TailwindIcon, TypescriptIcon, WebpackIcon } from "../utils/Devicon"
 import profileImg from '../assets/rohit.jpg'
 import '../scss/global.css'
 import { useEffect, useState } from "react"
@@ -19,10 +19,10 @@ const About = () =>{
                 <div className="about-section">
                     <h2 id="about-id">About</h2>
                     <div className="headline">
-                        <p>With a strong foundation in QA testing, I am transitioning towards a full stack developer role. I possess extensive
-                            expertise in ReactJS and ExpressJS and I am actively expanding my skill set to include a broader range of web
-                            development technologies. Eager to leverage my skills in crafting engaging digital solutions, I am enthusiastic about
-                            the promising path ahead in full stack development.
+                        <p>With a foundation in QA testing, I’m currently making strides towards becoming a frontend developer. Armed with
+                            extensive expertise in ReactJS, I’m actively expanding my skill set to encompass other frontend technologies. Eager
+                            to leverage these proficiencies in crafting captivating user interfaces, I’m excited about the exciting path ahead in
+                            frontend development.
                         </p>
                     </div>
 
@@ -74,19 +74,20 @@ const About = () =>{
                         </div>
                         <div className="skills-container-tier">
                             <span><TypescriptIcon/></span>
+                            <span><JavaIcon/></span>
                             <span><ReactIcon/></span>
                             <span><ReduxIcon/></span>
-                            <span><AxiosIcon/></span>
-                            <span><NodeJSIcon/></span>
+                            <span><AxiosIcon/></span>                           
                         </div>
                         <div className="skills-container-tier">
-                            <span><MySQLIcon/></span>
+                            <span><NodeJSIcon/></span>
                             <span><MongoIcon/></span>
                             <span><NextIcon/></span>
                             <span><WebpackIcon/></span>
                             <span><JestIcon/></span>
                         </div>
-                        <div className="skills-container-tier">                         
+                        <div className="skills-container-tier"> 
+                            <span><MySQLIcon/></span>                        
                             <span><PostmanIcon/></span>
                             <span><GitIcon/></span>
                             <span><GithubIcon/></span>

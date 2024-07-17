@@ -1,19 +1,24 @@
 import { useEffect, useState } from 'react'
 import '../scss/global.css'
-import { useNavigate } from 'react-router-dom'
 import Button from '../utils/Button'
+import resume from '../assets/CV_Rohit Kumar_Frontend.pdf'
 
 const Home = () =>{
 
     const [style, setStyle] = useState('')
-    const navigate = useNavigate()
 
     useEffect(()=>{
         setStyle('zoom-it')
     },[])
 
-    const navigateAboutPage = () =>{
-        navigate('/about')
+    const downloadResume = () =>{
+        const pdfUrl = resume;
+        const a = document.createElement('a');
+        a.href = pdfUrl;
+        a.download = 'CV_Rohit Kumar_Frontend.pdf'; 
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
     }
 
     return(
@@ -22,7 +27,7 @@ const Home = () =>{
             <div className={`landing-container ${style}`}>
                 <h1 id='name'>Rohit Kumar</h1>
                 <p id='profile-desc'>I'm a professional Software Engineer from Noida</p>
-                <Button className="btn-about-me" onclick={navigateAboutPage}>About Me</Button>
+                <Button className="btn-about-me" onclick={downloadResume}>Download Resume</Button>
             </div>     
         </section>
     )

@@ -8,6 +8,7 @@ import { AxiosPlainWordmark } from 'devicons-react';
 import { NextjsOriginalWordmark } from 'devicons-react';
 import { TailwindcssOriginal } from 'devicons-react';
 import { TypescriptOriginal } from 'devicons-react';
+import { JavaOriginalWordmark } from 'devicons-react';
 import { SassOriginal } from 'devicons-react';
 import { MysqlOriginalWordmark } from 'devicons-react';
 import { MongodbOriginalWordmark } from 'devicons-react';
@@ -35,6 +36,10 @@ export const JavascriptIcon = () =>{
 
 export const TypescriptIcon = () =>{
     return <><TypescriptOriginal size={100}/></>
+}
+
+export const JavaIcon = () =>{
+    return <><JavaOriginalWordmark size={100}/></>
 }
 
 export const SassIcon = () =>{

@@ -1,14 +1,17 @@
-import React from "react"
-import { Route, Routes } from "react-router-dom"
+import React, { useEffect } from "react"
+import { Route, Routes, useLocation, useParams } from "react-router-dom"
 import Loader from "../utils/loading"
 const LazyHome = React.lazy(()=>import('../components/home'))
 const LazyAbout = React.lazy(()=>import('../components/about'))
 const LazyResume = React.lazy(()=>import('../components/resume'))
 const LazyContact = React.lazy(()=>import('../components/contact'))
 const LazyServices = React.lazy(()=>import('../components/services'))
-
+const LazyNotFound = React.lazy(()=>import('../components/not-found'))
 
 const AppRoutes = () =>{
+    
+    const location = useLocation();
+    console.log(location.pathname);
 
     return(
         <Routes>
@@ -35,6 +38,11 @@ const AppRoutes = () =>{
             <Route path="/contact" element={
                 <React.Suspense fallback={<Loader/>}>
                     <LazyContact/>
+                </React.Suspense>
+            }/>
+            <Route path="*" element={
+                <React.Suspense fallback={<Loader/>}>
+                    <LazyNotFound/>
                 </React.Suspense>
             }/>
         </Routes>

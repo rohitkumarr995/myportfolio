@@ -696,6 +696,10 @@ section.contact-main-container .inner-contact-container .contact-details-section
   align-items: center;
   width: 100vw;
   height: 100vh;
+  background-image: url("https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .landing-page::before {
   content: "";
@@ -725,13 +729,15 @@ section.contact-main-container .inner-contact-container .contact-details-section
   font-family: "Raleway", sans-serif;
   color: #747474;
   font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.8rem;
 }
 .landing-container .btn-about-me {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 600;
-  width: 9rem;
+  width: 12rem;
   height: 3rem;
   color: #fff;
   background-color: #34b7a7;
@@ -842,6 +848,32 @@ section.services-main-container .services-card-section .service-card .card-conte
 section.services-main-container .services-card-section .service-card .card-content:hover {
   height: 50%;
   transition: 0.7s;
+}
+
+.notfound-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notfound-page .notfound-container {
+  text-align: center;
+}
+.notfound-page .notfound-container h1 {
+  font-size: 4rem;
+}
+.notfound-page .notfound-container #notfound-desc {
+  margin: 1rem 0;
+  font-family: "Raleway", sans-serif;
+  color: #a09f9f;
+  font-size: 2.5rem;
+}
+.notfound-page .notfound-container #timer {
+  margin-bottom: 2rem;
+  font-family: "Raleway", sans-serif;
+  color: rgb(253, 95, 95);
+  font-size: 3.5rem;
 }
 
 @media (max-width: 360px) {

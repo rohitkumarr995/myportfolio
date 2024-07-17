@@ -10,7 +10,7 @@ import { serverURL } from "../utils/Constants.js";
 const nameRegex = /^([a-zA-Z\s]+)$/
 const emailRegex = /^([a-zA-Z0-9\.]+)@([a-zA-Z]{2,10}).([a-zA-Z]{2,5})$/
 const subjectRegex = /^([a-zA-Z0-9\.\-\s]+)$/
-const messageRegex = /^([a-zA-Z0-9\.\-\:\s]+)$/
+const messageRegex = /^([a-zA-Z0-9\.\-\:\s , ?]+)$/
 
 const Contact = () => {
 
@@ -49,6 +49,10 @@ const Contact = () => {
             }
             setAlert("Meesage sent successfully")
             setIsSent(false)
+            setName('');
+            setEmail('');
+            setSubject('');
+            setMessage('');
         }      
     }
 
