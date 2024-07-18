@@ -1010,7 +1010,7 @@ section.services-main-container .services-card-section .service-card .card-conte
     flex-wrap: wrap;
   }
   section.resume-main-container {
-    margin: 10rem 5rem;
+    margin: 10rem 1rem;
     padding: 0 1rem;
   }
   section.resume-main-container p#headline-desc {
