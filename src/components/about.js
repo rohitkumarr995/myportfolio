@@ -40,7 +40,7 @@ const About = () =>{
                                     <div className="detail-1">
                                         <ul>
                                             <li><span>Birthday</span> : 10 April 1995</li>
-                                            <li><span>Website</span> : <Link to={"https://portfolio-nu-gules-17.vercel.app/home"}>Visit Me</Link></li>
+                                            <li><span>Website</span> : <Link to={"https://myportfolio-rohit-weld.vercel.app/home"}>Visit Me</Link></li>
                                             <li><span>Phone</span> : +91-7906916680</li>
                                             <li><span>City</span> : Agra, Uttar Pradesh</li>
                                         </ul>
@@ -62,7 +62,7 @@ const About = () =>{
                 <div className= "skills-section">
                     <h2>SKILLS</h2>
                     <div className="headline">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consequuntur corporis, libero sequi quasi ut totam, accusamus error rem sint neque ex porro quibusdam eum at enim quisquam vitae excepturi?</p>
+                        <p>I am an aspiring Software Developer with a solid foundation in JavaScript, ES6, TypeScript and Java. I have developed strong skills in front-end technologies like ReactJS, NextJS, HTML5, CSS3, Tailwind CSS, and SASS/SCSS. Additionally, I have a good understanding of SQL for efficient data management. I am familiar with version control using GitHub and testing tools like Jest and Postman. I am eager to apply my knowledge and continue learning in the field of software development.</p>
                     </div>
                     <div className="skills-containers">
                         <div className="skills-container-tier">

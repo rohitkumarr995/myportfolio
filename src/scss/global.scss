@@ -220,8 +220,9 @@ section.about-main-container{
     flex-direction: column;
     justify-content: center;
     font-size: 2rem;
-    margin: 10rem 5rem 10rem 5rem;
+    margin: 10rem 5rem;
     font-family: $open_sans_fontfamily; 
+    color: #707070;
 }
 
 .about-section {
@@ -351,6 +352,7 @@ section.resume-main-container{
     font-size: 2rem;
     margin: 10rem 5rem;
     font-family: $open_sans_fontfamily; 
+    color: #707070;
 
     #headline-title{
         text-align: center;
@@ -364,7 +366,6 @@ section.resume-main-container{
         font-size: 2rem;
         font-weight: normal;
         line-height: 2.2rem;
-        color: #707070;
     }
        
     .resume-details-desc{
@@ -540,7 +541,7 @@ section.contact-main-container{
     flex-direction: column;
     justify-content: center;
     font-size: 2rem;
-    margin: 10rem 15rem;
+    margin: 10rem 5rem;
     font-family: $open_sans_fontfamily;
 
     .inner-contact-container{
@@ -627,7 +628,7 @@ section.contact-main-container{
                         width: 100%;
                         margin-bottom: 2rem;
                         input{
-                            @include inputProp(40rem); 
+                            @include inputProp(35rem); 
                         }
                     }
                 }
@@ -639,7 +640,7 @@ section.contact-main-container{
                         width: 100%;
                         margin-bottom: 2rem;
                         input{
-                            @include inputProp(81rem); 
+                            @include inputProp(71.5rem); 
                         }
                     }
                 }
@@ -651,7 +652,7 @@ section.contact-main-container{
                         width: 100%;
                         margin-bottom: 2rem;
                         textarea{    
-                            @include inputProp(81rem); 
+                            @include inputProp(71.5rem); 
                             padding-top: 1rem;
                             height: 10rem;
                         }
@@ -703,8 +704,9 @@ section.contact-main-container{
 
     &::before{
         content: "";
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.6);
         position: absolute;
+        height: 100vh;
         inset: 0;
     }
 }
@@ -722,16 +724,15 @@ section.contact-main-container{
     h1{
         font-family: $raleway_sans_fontfamily;
         font-weight: 600;
-        color: #1d1d1d;
+        color: #2e2e2e;
     }
 
 
     #profile-desc{
         margin: 0.5rem 0 2rem 0;
         font-family: $raleway_sans_fontfamily;
-        color: #747474;
         font-size: 1.6rem;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 1.8rem;
     }
 
@@ -766,7 +767,7 @@ section.services-main-container{
     flex-direction: column;
     justify-content: center;
     font-size: 2rem;
-    margin: 10rem 10rem 12rem 10rem;
+    margin: 10rem 5rem;
     font-family: $open_sans_fontfamily;
     #headline-title{
         text-align: center;
@@ -792,8 +793,8 @@ section.services-main-container{
 
         .service-card{
             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-            width: 38rem;
-            height: 30rem;
+            width: 36rem;
+            height: 28rem;
             padding: 1rem;
             cursor: pointer;
             position: relative;
@@ -954,16 +955,12 @@ section.services-main-container{
     .landing-page{
         width: 36rem;
         height: 100vh;
-        background-image: url("https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         .landing-container{
             width: 20rem;           
             #profile-desc{
                 margin: 0.5rem 0 2rem 0;
                 font-family: $raleway_sans_fontfamily;
-                color: #747474;
+                color: #555555;
                 font-size: 1.2rem;
             }
         }
@@ -1046,7 +1043,7 @@ section.services-main-container{
     //resume
 
     section.resume-main-container{
-        margin: 10rem 1rem;
+        margin: 10rem 5rem;
         padding: 0 1rem;
 
         p#headline-desc{
@@ -1234,7 +1231,7 @@ section.services-main-container{
     
             div h2{
                 text-align: center;
-                text-decoration: underline solid rgb(2, 214, 2);
+                text-decoration: underline solid #34b7a7;
                 margin-bottom: 2rem;
                 text-transform: uppercase;
                 font-size: 3.2rem;

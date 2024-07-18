@@ -6,10 +6,9 @@
 
 html{
   font-size: 62.5%;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   overflow-x: hidden;
   scroll-behavior: smooth;
-  color: #494949;
 }
 
 @media(max-width:786px){
