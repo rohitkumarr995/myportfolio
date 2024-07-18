@@ -108,7 +108,10 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 25vw;
+  width: 30vw;
+}
+.navlink-sub-section div {
+  margin-right: 2rem;
 }
 .navlink-sub-section .hide-navbar {
   display: none;
@@ -321,7 +324,7 @@ section.resume-main-container p#headline-desc {
   font-size: 2rem;
   font-weight: normal;
   line-height: 2.2rem;
-  color: #494949;
+  color: #707070;
 }
 section.resume-main-container .resume-details-desc {
   display: flex;
@@ -351,7 +354,7 @@ section.resume-main-container .resume-details-desc .left-side-panel .basic-detai
 section.resume-main-container .resume-details-desc .left-side-panel .basic-details .summary-details::before {
   content: "";
   width: 0.3rem;
-  height: 19rem;
+  height: 21rem;
   position: absolute;
   top: 6.5rem;
   left: 1rem;
@@ -426,7 +429,7 @@ section.resume-main-container .resume-details-desc .left-side-panel .educational
   font-size: 1.8rem;
   font-weight: normal;
   line-height: 2.2rem;
-  color: #494949;
+  color: #707070;
 }
 section.resume-main-container .resume-details-desc .right-side-panel {
   width: 50%;
@@ -455,7 +458,7 @@ section.resume-main-container .resume-details-desc .right-side-panel .experience
 section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-1::before {
   content: "";
   width: 0.3rem;
-  height: 33rem;
+  height: 39rem;
   position: absolute;
   top: 3.5rem;
   left: 1rem;
@@ -464,7 +467,7 @@ section.resume-main-container .resume-details-desc .right-side-panel .experience
 section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-2::before {
   content: "";
   width: 0.3rem;
-  height: 22rem;
+  height: 24rem;
   position: absolute;
   top: 3.5rem;
   left: 1rem;
@@ -473,7 +476,7 @@ section.resume-main-container .resume-details-desc .right-side-panel .experience
 section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-3::before {
   content: "";
   width: 0.3rem;
-  height: 22rem;
+  height: 28rem;
   position: absolute;
   top: 3.5rem;
   left: 1rem;
@@ -491,7 +494,7 @@ section.resume-main-container .resume-details-desc .right-side-panel .experience
 section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-5::before {
   content: "";
   width: 0.3rem;
-  height: 17rem;
+  height: 19rem;
   position: absolute;
   top: 3.5rem;
   left: 1rem;
@@ -547,6 +550,7 @@ section.contact-main-container .inner-contact-container div h2 {
 }
 section.contact-main-container .inner-contact-container div p {
   font-size: 2rem;
+  color: #707070;
 }
 section.contact-main-container .inner-contact-container .google-map-iframe {
   padding: 4rem 0;
@@ -775,7 +779,7 @@ section.services-main-container p#headline-desc {
   font-size: 2rem;
   font-weight: normal;
   line-height: 2.2rem;
-  color: #494949;
+  color: #707070;
 }
 section.services-main-container .services-card-section {
   display: flex;
@@ -934,6 +938,10 @@ section.services-main-container .services-card-section .service-card .card-conte
   .landing-page {
     width: 36rem;
     height: 100vh;
+    background-image: url("https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .landing-page .landing-container {
     width: 20rem;
@@ -1012,7 +1020,7 @@ section.services-main-container .services-card-section .service-card .card-conte
     font-weight: normal;
     line-height: 2.2rem;
     text-align: center;
-    color: #494949;
+    color: #707070;
   }
   section.resume-main-container .resume-details-desc {
     display: flex;
@@ -1079,7 +1087,7 @@ section.services-main-container .services-card-section .service-card .card-conte
     font-size: 1.6rem;
     font-weight: normal;
     line-height: 2.2rem;
-    color: #494949;
+    color: #707070;
   }
   section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-2:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-2:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-2:before {
     content: "";
@@ -1094,7 +1102,7 @@ section.services-main-container .services-card-section .service-card .card-conte
     font-size: 1.6rem;
     font-weight: normal;
     line-height: 2.2rem;
-    color: #494949;
+    color: #707070;
   }
   section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-3:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-3:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-3:before {
     content: "";
@@ -1109,7 +1117,7 @@ section.services-main-container .services-card-section .service-card .card-conte
     font-size: 1.6rem;
     font-weight: normal;
     line-height: 2.2rem;
-    color: #494949;
+    color: #707070;
   }
   section.resume-main-container .resume-details-desc .right-side-panel {
     width: 100%;
@@ -1120,7 +1128,7 @@ section.services-main-container .services-card-section .service-card .card-conte
     width: 0.3rem;
     height: 48rem;
     position: absolute;
-    top: 3rem;
+    top: 3.5rem;
     left: 1rem;
     background-color: #34b7a7;
   }
@@ -1129,7 +1137,7 @@ section.services-main-container .services-card-section .service-card .card-conte
     width: 0.3rem;
     height: 30rem;
     position: absolute;
-    top: 3rem;
+    top: 3.5rem;
     left: 1rem;
     background-color: #34b7a7;
   }
@@ -1138,7 +1146,7 @@ section.services-main-container .services-card-section .service-card .card-conte
     width: 0.3rem;
     height: 32rem;
     position: absolute;
-    top: 3rem;
+    top: 3.5rem;
     left: 1rem;
     background-color: #34b7a7;
   }
@@ -1147,7 +1155,7 @@ section.services-main-container .services-card-section .service-card .card-conte
     width: 0.3rem;
     height: 23rem;
     position: absolute;
-    top: 3rem;
+    top: 3.5rem;
     left: 1rem;
     background-color: #34b7a7;
   }
@@ -1156,7 +1164,7 @@ section.services-main-container .services-card-section .service-card .card-conte
     width: 0.3rem;
     height: 25rem;
     position: absolute;
-    top: 3rem;
+    top: 3.5rem;
     left: 1rem;
     background-color: #34b7a7;
   }
