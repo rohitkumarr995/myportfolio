@@ -37,7 +37,7 @@ const Navbar = () =>{
                 <div className="nav-section">
                     <div className="nav-logo-section">
                         <div className="nav-elements logo-element">
-                            <NavLink to='/home'>Portfolio.</NavLink>
+                            <NavLink to='/home'>rohit.</NavLink>
                         </div>
                     </div>
 
@@ -60,8 +60,8 @@ const Navbar = () =>{
                                 </NavLink>
                             </div>
                             <div className="nav-elements services-element">
-                                <NavLink style={navLinkStyle}  className='navlink' to='/services'>
-                                    <p  className='services-link'>Services</p>
+                                <NavLink style={navLinkStyle}  className='navlink' to='/projects'>
+                                    <p  className='services-link'>Projects</p>
                                 </NavLink>
                             </div>                       
                             <div className="nav-elements contact-element">

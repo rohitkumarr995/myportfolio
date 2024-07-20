@@ -5,7 +5,7 @@ const LazyHome = React.lazy(()=>import('../components/home'))
 const LazyAbout = React.lazy(()=>import('../components/about'))
 const LazyResume = React.lazy(()=>import('../components/resume'))
 const LazyContact = React.lazy(()=>import('../components/contact'))
-const LazyServices = React.lazy(()=>import('../components/services'))
+const LazyProjects = React.lazy(()=>import('../components/projects'))
 const LazyNotFound = React.lazy(()=>import('../components/not-found'))
 
 const AppRoutes = () =>{
@@ -30,9 +30,9 @@ const AppRoutes = () =>{
                     <LazyResume/>
                 </React.Suspense>
             }/>
-            <Route path="/services" element={
+            <Route path="/projects" element={
                 <React.Suspense fallback={<Loader/>}>
-                    <LazyServices/>
+                    <LazyProjects/>
                 </React.Suspense>
             }/>
             <Route path="/contact" element={

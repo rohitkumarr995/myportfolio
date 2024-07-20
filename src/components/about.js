@@ -7,6 +7,27 @@ const { Link } = require("react-router-dom")
 
 const About = () =>{
     const [opacity, setOpacity] = useState(false)
+    const [index, setIndex] = useState(0);
+    const [text, setText] = useState("");
+
+    const role = "Frontend Developer";
+    const Roles = role.split("");
+
+    function displayCharacter() {
+        if (index < role.length) {
+        setIndex(index + 1);
+        setText(text.concat(Roles[index]));
+        } else if (index == role.length) {
+        setIndex(0);
+        setText("");
+        }
+    }
+
+    useEffect(() => {
+        let interval = setInterval(displayCharacter, 100);
+
+        return () => clearInterval(interval);
+    }, [index]);
 
     useEffect(()=>{
         setOpacity(true)
@@ -34,7 +55,7 @@ const About = () =>{
                             <div className="title">
                                 <h2 className="about-title">Frontend Developer</h2>
                                 <p className="description">
-                                I am an aspiring <span id="profile-role">Frontend Developer</span>.
+                                I am an aspiring <span id="profile-role">{text}</span>.
                                 </p>
                                 <div className="personal-details">
                                     <div className="detail-1">

@@ -5,7 +5,7 @@ import Portfolio from '../assets/portfolio.png'
 import Button from '../utils/Button.js'
 import { useEffect, useState } from 'react'
 
-const Services = () =>{
+const Project = () =>{
     const [opacity, setOpacity] = useState(false)
 
     useEffect(()=>{
@@ -21,7 +21,7 @@ const Services = () =>{
         <>
         <section className= {`fade-in ${opacity ? 'visible' : ''} services-main-container`}>
             <div className="services-headline-desc">
-                <h2 id="headline-title">Services</h2>
+                <h2 id="headline-title">Projects</h2>
                 <p id="headline-desc">I have built couple of projects showcasing my skills in front-end development and SQL. These projects include a dynamic web application using ReactJS, and a responsive website styled with CSS3 and SASS/SCSS. Additionally, I have worked on a data-driven application utilizing SQL for efficient database management. These experiences have honed my abilities and fueled my passion for software development.</p>
             </div>
             <div className="services-card-section">
@@ -58,4 +58,4 @@ const Services = () =>{
     )
 }
 
-export default Services
+export default Project
