@@ -1317,10 +1317,10 @@ section.services-main-container{
     }
 }
 
-@media(max-width:360px){
+@media(max-width:420px){
     //nav media
     nav.nav-main-header{
-        width: 36rem;
+        width: 100vw;
         .nav-section{
             width: 40rem;
             margin: 0 2rem;
@@ -1374,7 +1374,7 @@ section.services-main-container{
     }   
     //footer
     footer{
-        width: 36rem;
+        width: 100vw;
         font-size: 1.4rem;
         padding: 1rem;
     }

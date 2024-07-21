@@ -1319,9 +1319,9 @@ section.services-main-container .services-card-section .service-card .card-conte
     background-color: #55d8c9;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 420px) {
   nav.nav-main-header {
-    width: 36rem;
+    width: 100vw;
   }
   nav.nav-main-header .nav-section {
     width: 40rem;
@@ -1370,7 +1370,7 @@ section.services-main-container .services-card-section .service-card .card-conte
     margin-bottom: 2rem;
   }
   footer {
-    width: 36rem;
+    width: 100vw;
     font-size: 1.4rem;
     padding: 1rem;
   }
