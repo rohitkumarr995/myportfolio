@@ -6,6 +6,7 @@ import { PhoneCall } from 'lucide-react';
 import Button from '../utils/Button.js'
 import { useEffect, useState } from "react";
 import { serverURL } from "../utils/Constants.js";
+import ArrowUp from "../utils/arrow-up.js";
 
 const nameRegex = /^([a-zA-Z\s]+)$/
 const emailRegex = /^([a-zA-Z0-9\.]+)@([a-zA-Z]{2,10}).([a-zA-Z]{2,5})$/
@@ -150,6 +151,7 @@ const Contact = () => {
             </div>
         </div>      
       </section>
+      <ArrowUp/>
     </>
   );
 };

@@ -5,6 +5,10 @@ const NotFound = () => {
   const [timer, setTimer] = useState(5);
   const navigate = useNavigate();
 
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
+
   useEffect(() => {
     if (timer > 0) {
       let timeout = setInterval(() => {

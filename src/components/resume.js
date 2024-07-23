@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import ArrowUp from "../utils/arrow-up"
 
 const Resume = () =>{
 
@@ -136,6 +137,7 @@ const Resume = () =>{
                     </aside>
                 </div>
             </section>
+            <ArrowUp/>
         </>
     )
 }

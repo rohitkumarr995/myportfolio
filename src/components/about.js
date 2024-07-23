@@ -2,6 +2,7 @@ import { AxiosIcon, CSSIcon, GitIcon, GithubIcon, HTMLIcon, JavaIcon, Javascript
 import profileImg from '../assets/rohit.jpg'
 import '../scss/global.css'
 import { useEffect, useState } from "react"
+import ArrowUp from "../utils/arrow-up"
 
 const { Link } = require("react-router-dom")
 
@@ -117,6 +118,7 @@ const About = () =>{
                     </div>
                 </div>
             </section>
+            <ArrowUp/>
         </>
     )
 }

@@ -4,6 +4,7 @@ import XCart from '../assets/xcart.png'
 import Portfolio from '../assets/portfolio.png'
 import Button from '../utils/Button.js'
 import { useEffect, useState } from 'react'
+import ArrowUp from '../utils/arrow-up.js'
 
 const Project = () =>{
     const [opacity, setOpacity] = useState(false)
@@ -54,6 +55,7 @@ const Project = () =>{
                 </div>
             </div>
         </section>
+        <ArrowUp/>
         </>
     )
 }
