@@ -323,11 +323,11 @@ section.about-main-container{
 
 //resume
 
-@mixin verticalBar($height, $top, $left){
+@mixin verticalBar($top, $left){
     content: "";
     width: 0.3rem;
-    height: $height;
     position: absolute;
+    height: calc(100% - $top);
     top: $top;
     left: $left;
     background-color:  #34b7a7;
@@ -393,7 +393,7 @@ section.resume-main-container{
                         line-height: 2rem;
                     }
                     &::before{
-                        @include verticalBar(21rem,6.5rem ,1rem )  
+                        @include verticalBar(6.5rem ,1rem )  
                     }
                 }
              
@@ -407,7 +407,6 @@ section.resume-main-container{
                 }
                 ul#basic-details-list{
                     padding-top: 1rem;
-                    padding-bottom: 1rem;
                     padding-left: 2rem;
                     font-size: 1.8rem;
                     line-height: 2rem;
@@ -444,7 +443,7 @@ section.resume-main-container{
 
                         .course-details-1,.course-details-2,.course-details-3{
                             &::before{
-                                @include verticalBar(9rem, 3rem, -3rem,);  
+                                @include verticalBar(3rem, -3rem,);  
                             }
                             h3, h4{
                                 font-size: 1.8rem;
@@ -476,19 +475,19 @@ section.resume-main-container{
                     @include circle(1.5rem,0)
                 }
                 .exp-details-1::before{
-                    @include verticalBar(39rem, 3.5rem, 1rem,);
+                    @include verticalBar(3.5rem, 1rem,);
                 }
                 .exp-details-2::before{
-                    @include verticalBar(24rem, 3.5rem, 1rem,);
+                    @include verticalBar(3.5rem, 1rem,);
                 }
                 .exp-details-3::before{
-                    @include verticalBar(28rem, 3.5rem, 1rem,);
+                    @include verticalBar(3.5rem, 1rem,);
                 }
                 .exp-details-4::before{
-                    @include verticalBar(15rem, 3.5rem, 1rem,);
+                    @include verticalBar(3.5rem, 1rem,);
                 }
                 .exp-details-5::before{
-                    @include verticalBar(19rem, 3.5rem, 1rem,);
+                    @include verticalBar(3.5rem, 1rem,);
                 }
                 h3{
                     font-size: 2rem;
@@ -622,13 +621,13 @@ section.contact-main-container{
 
                 .form-element-basic{
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     justify-content: space-between;
                     div {
                         width: 100%;
                         margin-bottom: 2rem;
                         input{
-                            @include inputProp(35rem); 
+                            @include inputProp(100%); 
                         }
                     }
                 }
@@ -640,7 +639,7 @@ section.contact-main-container{
                         width: 100%;
                         margin-bottom: 2rem;
                         input{
-                            @include inputProp(71.5rem); 
+                            @include inputProp(100%); 
                         }
                     }
                 }
@@ -652,7 +651,7 @@ section.contact-main-container{
                         width: 100%;
                         margin-bottom: 2rem;
                         textarea{    
-                            @include inputProp(71.5rem); 
+                            @include inputProp(100%); 
                             padding-top: 1rem;
                             height: 10rem;
                         }
@@ -917,7 +916,7 @@ section.services-main-container{
 
         .menu{
             display: none;
-        }
+        } 
     }
     
     //footer
@@ -1056,7 +1055,7 @@ section.services-main-container{
                             line-height: 2.2rem;
                         }
                         &::before{
-                            @include verticalBar(21rem,6.5rem ,1rem )  
+                            @include verticalBar(6.5rem ,1rem )  
                         }
                     }
                  
@@ -1088,7 +1087,7 @@ section.services-main-container{
                             }
                             .course-details-1{
                                 &:before{
-                                    @include verticalBar(8.5rem, 3rem, -3rem,);  
+                                    @include verticalBar(3rem, -3rem,);  
                                 }
                                 h3, h4{
                                     font-size: 2rem;
@@ -1099,7 +1098,7 @@ section.services-main-container{
                             }  
                             .course-details-2{
                                 &:before{
-                                    @include verticalBar(8.5rem, 3rem, -3rem,);  
+                                    @include verticalBar(3rem, -3rem,);  
                                 }
                                 h3, h4{
                                     font-size: 2rem;
@@ -1110,7 +1109,7 @@ section.services-main-container{
                             }
                             .course-details-3{
                                 &:before{
-                                    @include verticalBar(8.5rem, 3rem, -3rem,);  
+                                    @include verticalBar(3rem, -3rem,);  
                                 }
                                 h3, h4{
                                     font-size: 2rem;
@@ -1131,19 +1130,19 @@ section.services-main-container{
                 .experience-block{
     
                     .exp-details-1::before{
-                        @include verticalBar(30rem, 3.5rem, 1rem,);
+                        @include verticalBar(3.5rem, 1rem,);
                     }
                     .exp-details-2::before{
-                        @include verticalBar(21rem, 3.5rem, 1rem,);
+                        @include verticalBar(3.5rem, 1rem,);
                     }
                     .exp-details-3::before{
-                        @include verticalBar(20rem, 3.5rem, 1rem,);
+                        @include verticalBar(3.5rem, 1rem,);
                     }
                     .exp-details-4::before{
-                        @include verticalBar(14.5rem, 3.5rem, 1rem,);
+                        @include verticalBar(3.5rem, 1rem,);
                     }
                     .exp-details-5::before{
-                        @include verticalBar(15.5rem, 3.5rem, 1rem,);
+                        @include verticalBar(3.5rem, 1rem,);
                     }
                     h3{
                         padding-top: 0.5rem;
@@ -1256,13 +1255,13 @@ section.services-main-container{
                     width: 100%;
                     padding: 2rem 1rem;
                     .form-element-basic{
-                        flex-direction: row;
+                        flex-direction: column;
                         justify-content: flex-start;
                         div {
                             width: 100%;
                             margin-bottom: 2rem;
                             input{
-                                @include inputProp(34rem); 
+                                @include inputProp(100%); 
                             }
                         }
                     }
@@ -1272,7 +1271,7 @@ section.services-main-container{
                             width: 100%;
                             margin-bottom: 2rem;
                             input{
-                                @include inputProp(70rem); 
+                                @include inputProp(100%); 
                             }
                         }
                     }
@@ -1284,7 +1283,7 @@ section.services-main-container{
                             width: 100%;
                             margin-bottom: 2rem;
                             textarea{    
-                                @include inputProp(70rem); 
+                                @include inputProp(100%); 
                                 padding-top: 1rem;
                                 height: 10rem;
                             }
@@ -1357,8 +1356,9 @@ section.services-main-container{
             align-items: flex-start;
             background-color: #fff;
             color: black;
-            width: 31rem;
-            height: 60rem;
+            width: 85vw;
+            // height: 60rem;
+            height: 80vh;
             margin-top: 4rem;
             padding: 3rem 3rem;
             border-radius: 1rem;
@@ -1395,8 +1395,12 @@ section.services-main-container{
 
         .about-section {
             .about-sub{
+                display: flex;
+                    justify-content: center;
+                    align-items: center;
     
                 .about-image-container{
+                    
                     width: 32rem;
                     padding: 2rem 0;
                 }
@@ -1421,15 +1425,16 @@ section.services-main-container{
         margin: 10rem 1rem;     
         .resume-details-desc{
             .left-side-panel{
-                .basic-details{
+                .basic-details{               
                     .summary-details{
+                        height: max-content;
                         p{
                             font-size: 1.6rem;
                             font-style: italic;
                             line-height: 2.2rem;
                         }
                         &::before{
-                            @include verticalBar(32rem,6.5rem ,1rem )  
+                            @include verticalBar(6.5rem ,1rem )  
                         }
                     }
                 }
@@ -1441,7 +1446,7 @@ section.services-main-container{
                         .educational-detail-1, .educational-detail-2, .educational-detail-3 {
                             .course-details-1{
                                 &:before{
-                                    @include verticalBar(13rem, 3rem, -3rem,);  
+                                    @include verticalBar(3rem, -3rem,);  
                                 } 
                                 h3, h4{
                                     font-size: 1.6rem;
@@ -1452,7 +1457,7 @@ section.services-main-container{
                             }  
                             .course-details-2{
                                 &:before{
-                                    @include verticalBar(11rem, 3rem, -3rem,);  
+                                    @include verticalBar(3rem, -3rem,);  
                                 }    
                                 h3, h4{
                                     font-size: 1.6rem;
@@ -1463,7 +1468,7 @@ section.services-main-container{
                             }
                             .course-details-3{
                                 &:before{
-                                    @include verticalBar(8rem, 3rem, -3rem,);  
+                                    @include verticalBar(3rem, -3rem,);  
                                 }    
                                 h3, h4{
                                     font-size: 1.6rem;
@@ -1479,20 +1484,21 @@ section.services-main-container{
             }
             .right-side-panel{
                 .experience-block{ 
+                    height: max-content;
                     .exp-details-1::before{
-                        @include verticalBar(48rem, 3.5rem, 1rem,);
+                        @include verticalBar(3.5rem, 1rem,);
                     }
                     .exp-details-2::before{
-                        @include verticalBar(30rem, 3.5rem, 1rem,);
+                        @include verticalBar(3.5rem, 1rem,);
                     }
                     .exp-details-3::before{
-                        @include verticalBar(32rem, 3.5rem, 1rem,);
+                        @include verticalBar(3.5rem, 1rem,);
                     }
                     .exp-details-4::before{
-                        @include verticalBar(23rem, 3.5rem, 1rem,);
+                        @include verticalBar(3.5rem, 1rem,);
                     }
                     .exp-details-5::before{
-                        @include verticalBar(25rem, 3.5rem, 1rem,);
+                        @include verticalBar(3.5rem, 1rem,);
                     }
                     #designation{
                         font-size: 1.8rem;
@@ -1515,10 +1521,9 @@ section.services-main-container{
         .services-card-section{
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            padding-top: 1rem;
-            padding-left: 0;      
+            justify-content: center;
+            align-items: center;
+            padding-top: 1rem;     
         }
     }
 
@@ -1554,7 +1559,7 @@ section.services-main-container{
                         justify-content: flex-start;
                         div {
                             input{
-                                @include inputProp(32rem); 
+                                @include inputProp(100%); 
                             }
                         }
                     }
@@ -1562,14 +1567,16 @@ section.services-main-container{
                     .form-element-subject{
                         div {
                             input{
-                                @include inputProp(32rem); 
+                                @include inputProp(100%); 
                             }
                         }
                     }
                     .form-element-message{
                         div {
                             textarea{    
-                                @include inputProp(32rem); 
+                                @include inputProp(100%); 
+                                padding-top: 1rem;
+                                height: 10rem;
                             }
                         }
                     }

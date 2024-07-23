@@ -355,8 +355,8 @@ section.resume-main-container .resume-details-desc .left-side-panel .basic-detai
 section.resume-main-container .resume-details-desc .left-side-panel .basic-details .summary-details::before {
   content: "";
   width: 0.3rem;
-  height: 21rem;
   position: absolute;
+  height: calc(100% - 6.5rem);
   top: 6.5rem;
   left: 1rem;
   background-color: #34b7a7;
@@ -378,7 +378,6 @@ section.resume-main-container .resume-details-desc .left-side-panel .basic-detai
 }
 section.resume-main-container .resume-details-desc .left-side-panel .basic-details ul#basic-details-list {
   padding-top: 1rem;
-  padding-bottom: 1rem;
   padding-left: 2rem;
   font-size: 1.8rem;
   line-height: 2rem;
@@ -420,8 +419,8 @@ section.resume-main-container .resume-details-desc .left-side-panel .educational
 section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-1::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-2::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-3::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-1::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-2::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-3::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-1::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-2::before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-3::before {
   content: "";
   width: 0.3rem;
-  height: 9rem;
   position: absolute;
+  height: calc(100% - 3rem);
   top: 3rem;
   left: -3rem;
   background-color: #34b7a7;
@@ -459,8 +458,8 @@ section.resume-main-container .resume-details-desc .right-side-panel .experience
 section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-1::before {
   content: "";
   width: 0.3rem;
-  height: 39rem;
   position: absolute;
+  height: calc(100% - 3.5rem);
   top: 3.5rem;
   left: 1rem;
   background-color: #34b7a7;
@@ -468,8 +467,8 @@ section.resume-main-container .resume-details-desc .right-side-panel .experience
 section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-2::before {
   content: "";
   width: 0.3rem;
-  height: 24rem;
   position: absolute;
+  height: calc(100% - 3.5rem);
   top: 3.5rem;
   left: 1rem;
   background-color: #34b7a7;
@@ -477,8 +476,8 @@ section.resume-main-container .resume-details-desc .right-side-panel .experience
 section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-3::before {
   content: "";
   width: 0.3rem;
-  height: 28rem;
   position: absolute;
+  height: calc(100% - 3.5rem);
   top: 3.5rem;
   left: 1rem;
   background-color: #34b7a7;
@@ -486,8 +485,8 @@ section.resume-main-container .resume-details-desc .right-side-panel .experience
 section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-4::before {
   content: "";
   width: 0.3rem;
-  height: 15rem;
   position: absolute;
+  height: calc(100% - 3.5rem);
   top: 3.5rem;
   left: 1rem;
   background-color: #34b7a7;
@@ -495,8 +494,8 @@ section.resume-main-container .resume-details-desc .right-side-panel .experience
 section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-5::before {
   content: "";
   width: 0.3rem;
-  height: 19rem;
   position: absolute;
+  height: calc(100% - 3.5rem);
   top: 3.5rem;
   left: 1rem;
   background-color: #34b7a7;
@@ -605,7 +604,7 @@ section.contact-main-container .inner-contact-container .contact-details-section
 }
 section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic div {
@@ -613,7 +612,7 @@ section.contact-main-container .inner-contact-container .contact-details-section
   margin-bottom: 2rem;
 }
 section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic div input {
-  width: 35rem;
+  width: 100%;
   height: 4rem;
   border: none;
   outline: 0.1rem solid rgb(214, 214, 214);
@@ -634,7 +633,7 @@ section.contact-main-container .inner-contact-container .contact-details-section
   margin-bottom: 2rem;
 }
 section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-subject div input {
-  width: 71.5rem;
+  width: 100%;
   height: 4rem;
   border: none;
   outline: 0.1rem solid rgb(214, 214, 214);
@@ -655,7 +654,7 @@ section.contact-main-container .inner-contact-container .contact-details-section
   margin-bottom: 2rem;
 }
 section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-message div textarea {
-  width: 71.5rem;
+  width: 100%;
   height: 4rem;
   border: none;
   outline: 0.1rem solid rgb(214, 214, 214);
@@ -1025,8 +1024,8 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container .resume-details-desc .left-side-panel .basic-details .summary-details::before {
     content: "";
     width: 0.3rem;
-    height: 21rem;
     position: absolute;
+    height: calc(100% - 6.5rem);
     top: 6.5rem;
     left: 1rem;
     background-color: #34b7a7;
@@ -1055,8 +1054,8 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-1:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-1:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-1:before {
     content: "";
     width: 0.3rem;
-    height: 8.5rem;
     position: absolute;
+    height: calc(100% - 3rem);
     top: 3rem;
     left: -3rem;
     background-color: #34b7a7;
@@ -1070,8 +1069,8 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-2:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-2:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-2:before {
     content: "";
     width: 0.3rem;
-    height: 8.5rem;
     position: absolute;
+    height: calc(100% - 3rem);
     top: 3rem;
     left: -3rem;
     background-color: #34b7a7;
@@ -1085,8 +1084,8 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-3:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-3:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-3:before {
     content: "";
     width: 0.3rem;
-    height: 8.5rem;
     position: absolute;
+    height: calc(100% - 3rem);
     top: 3rem;
     left: -3rem;
     background-color: #34b7a7;
@@ -1104,8 +1103,8 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-1::before {
     content: "";
     width: 0.3rem;
-    height: 30rem;
     position: absolute;
+    height: calc(100% - 3.5rem);
     top: 3.5rem;
     left: 1rem;
     background-color: #34b7a7;
@@ -1113,8 +1112,8 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-2::before {
     content: "";
     width: 0.3rem;
-    height: 21rem;
     position: absolute;
+    height: calc(100% - 3.5rem);
     top: 3.5rem;
     left: 1rem;
     background-color: #34b7a7;
@@ -1122,8 +1121,8 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-3::before {
     content: "";
     width: 0.3rem;
-    height: 20rem;
     position: absolute;
+    height: calc(100% - 3.5rem);
     top: 3.5rem;
     left: 1rem;
     background-color: #34b7a7;
@@ -1131,8 +1130,8 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-4::before {
     content: "";
     width: 0.3rem;
-    height: 14.5rem;
     position: absolute;
+    height: calc(100% - 3.5rem);
     top: 3.5rem;
     left: 1rem;
     background-color: #34b7a7;
@@ -1140,8 +1139,8 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-5::before {
     content: "";
     width: 0.3rem;
-    height: 15.5rem;
     position: absolute;
+    height: calc(100% - 3.5rem);
     top: 3.5rem;
     left: 1rem;
     background-color: #34b7a7;
@@ -1239,7 +1238,7 @@ section.services-main-container .services-card-section .service-card .card-conte
     padding: 2rem 1rem;
   }
   section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
   }
   section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic div {
@@ -1247,7 +1246,7 @@ section.services-main-container .services-card-section .service-card .card-conte
     margin-bottom: 2rem;
   }
   section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic div input {
-    width: 34rem;
+    width: 100%;
     height: 4rem;
     border: none;
     outline: 0.1rem solid rgb(214, 214, 214);
@@ -1263,7 +1262,7 @@ section.services-main-container .services-card-section .service-card .card-conte
     margin-bottom: 2rem;
   }
   section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-subject div input {
-    width: 70rem;
+    width: 100%;
     height: 4rem;
     border: none;
     outline: 0.1rem solid rgb(214, 214, 214);
@@ -1284,7 +1283,7 @@ section.services-main-container .services-card-section .service-card .card-conte
     margin-bottom: 2rem;
   }
   section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-message div textarea {
-    width: 70rem;
+    width: 100%;
     height: 4rem;
     border: none;
     outline: 0.1rem solid rgb(214, 214, 214);
@@ -1356,8 +1355,8 @@ section.services-main-container .services-card-section .service-card .card-conte
     align-items: flex-start;
     background-color: #fff;
     color: black;
-    width: 31rem;
-    height: 60rem;
+    width: 85vw;
+    height: 80vh;
     margin-top: 4rem;
     padding: 3rem 3rem;
     border-radius: 1rem;
@@ -1384,6 +1383,11 @@ section.services-main-container .services-card-section .service-card .card-conte
     margin: 10rem 2rem;
     font-size: 1.8rem;
   }
+  section.about-main-container .about-section .about-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   section.about-main-container .about-section .about-sub .about-image-container {
     width: 32rem;
     padding: 2rem 0;
@@ -1400,6 +1404,10 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container {
     margin: 10rem 1rem;
   }
+  section.resume-main-container .resume-details-desc .left-side-panel .basic-details .summary-details {
+    height: -moz-max-content;
+    height: max-content;
+  }
   section.resume-main-container .resume-details-desc .left-side-panel .basic-details .summary-details p {
     font-size: 1.6rem;
     font-style: italic;
@@ -1408,8 +1416,8 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container .resume-details-desc .left-side-panel .basic-details .summary-details::before {
     content: "";
     width: 0.3rem;
-    height: 32rem;
     position: absolute;
+    height: calc(100% - 6.5rem);
     top: 6.5rem;
     left: 1rem;
     background-color: #34b7a7;
@@ -1421,8 +1429,8 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-1:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-1:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-1:before {
     content: "";
     width: 0.3rem;
-    height: 13rem;
     position: absolute;
+    height: calc(100% - 3rem);
     top: 3rem;
     left: -3rem;
     background-color: #34b7a7;
@@ -1436,8 +1444,8 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-2:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-2:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-2:before {
     content: "";
     width: 0.3rem;
-    height: 11rem;
     position: absolute;
+    height: calc(100% - 3rem);
     top: 3rem;
     left: -3rem;
     background-color: #34b7a7;
@@ -1451,8 +1459,8 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-1 .course-details-3:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-2 .course-details-3:before, section.resume-main-container .resume-details-desc .left-side-panel .educational-details .education-list .educational-detail-3 .course-details-3:before {
     content: "";
     width: 0.3rem;
-    height: 8rem;
     position: absolute;
+    height: calc(100% - 3rem);
     top: 3rem;
     left: -3rem;
     background-color: #34b7a7;
@@ -1463,11 +1471,15 @@ section.services-main-container .services-card-section .service-card .card-conte
     line-height: 2.2rem;
     color: #707070;
   }
+  section.resume-main-container .resume-details-desc .right-side-panel .experience-block {
+    height: -moz-max-content;
+    height: max-content;
+  }
   section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-1::before {
     content: "";
     width: 0.3rem;
-    height: 48rem;
     position: absolute;
+    height: calc(100% - 3.5rem);
     top: 3.5rem;
     left: 1rem;
     background-color: #34b7a7;
@@ -1475,8 +1487,8 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-2::before {
     content: "";
     width: 0.3rem;
-    height: 30rem;
     position: absolute;
+    height: calc(100% - 3.5rem);
     top: 3.5rem;
     left: 1rem;
     background-color: #34b7a7;
@@ -1484,8 +1496,8 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-3::before {
     content: "";
     width: 0.3rem;
-    height: 32rem;
     position: absolute;
+    height: calc(100% - 3.5rem);
     top: 3.5rem;
     left: 1rem;
     background-color: #34b7a7;
@@ -1493,8 +1505,8 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-4::before {
     content: "";
     width: 0.3rem;
-    height: 23rem;
     position: absolute;
+    height: calc(100% - 3.5rem);
     top: 3.5rem;
     left: 1rem;
     background-color: #34b7a7;
@@ -1502,8 +1514,8 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.resume-main-container .resume-details-desc .right-side-panel .experience-block .exp-details-5::before {
     content: "";
     width: 0.3rem;
-    height: 25rem;
     position: absolute;
+    height: calc(100% - 3.5rem);
     top: 3.5rem;
     left: 1rem;
     background-color: #34b7a7;
@@ -1523,10 +1535,9 @@ section.services-main-container .services-card-section .service-card .card-conte
   section.services-main-container .services-card-section {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     padding-top: 1rem;
-    padding-left: 0;
   }
   section.contact-main-container {
     margin: 10rem 1rem;
@@ -1547,7 +1558,7 @@ section.services-main-container .services-card-section .service-card .card-conte
     justify-content: flex-start;
   }
   section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-basic div input {
-    width: 32rem;
+    width: 100%;
     height: 4rem;
     border: none;
     outline: 0.1rem solid rgb(214, 214, 214);
@@ -1559,7 +1570,7 @@ section.services-main-container .services-card-section .service-card .card-conte
     outline: 0.1rem solid #34b7a7;
   }
   section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-subject div input {
-    width: 32rem;
+    width: 100%;
     height: 4rem;
     border: none;
     outline: 0.1rem solid rgb(214, 214, 214);
@@ -1571,13 +1582,15 @@ section.services-main-container .services-card-section .service-card .card-conte
     outline: 0.1rem solid #34b7a7;
   }
   section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-message div textarea {
-    width: 32rem;
+    width: 100%;
     height: 4rem;
     border: none;
     outline: 0.1rem solid rgb(214, 214, 214);
     font-size: 1.5rem;
     padding: 0 1rem;
     border-radius: 0.4rem;
+    padding-top: 1rem;
+    height: 10rem;
   }
   section.contact-main-container .inner-contact-container .contact-details-section .contact-form .form-element-message div textarea:focus {
     outline: 0.1rem solid #34b7a7;
