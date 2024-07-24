@@ -22,10 +22,13 @@ const Contact = () => {
     const [isSent, setIsSent] = useState(false)
     const [alert, setAlert] = useState('')
     const [opacity, setOpacity] = useState(false)
+    const [dateTime, setDateTime] = useState('')
 
     useEffect(()=>{
         setOpacity(true)
         window.scrollTo(0,0);
+        let date = new Date();
+        setDateTime(`${date.toLocaleDateString()}, ${date.toLocaleTimeString()}`)
     },[])
 
 
@@ -121,18 +124,18 @@ const Contact = () => {
                     <form name="submit-to-google-sheet" onSubmit={sendMesage}>
                         <div className="form-element-basic">
                             <div>
-                                <input type="text" name="name"  value={name} style={alert.includes('Name') ? {border:"1px solid red"} : null} placeholder="Name" onChange={e=>setName(e.target.value)}/>
-                                
+                                <input type="text" name="date"  value={dateTime} hidden/>                           
                             </div>
                             <div>
-                                <input type="email" name="email" value={email} style={alert.includes('Email') ? {border:"1px solid red"} : null} placeholder="Email" onChange={e=>setEmail(e.target.value)}/>
-                                
+                                <input type="text" name="name"  value={name} style={alert.includes('Name') ? {border:"1px solid red"} : null} placeholder="Name" onChange={e=>setName(e.target.value)}/>                               
+                            </div>
+                            <div>
+                                <input type="email" name="email" value={email} style={alert.includes('Email') ? {border:"1px solid red"} : null} placeholder="Email" onChange={e=>setEmail(e.target.value)}/> 
                             </div>                           
                         </div>
                         <div className="form-element-subject">
                             <div>
                                 <input type="text" name="subject" value={subject} style={alert.includes('Subject') ? {border:"1px solid red"} : null} placeholder="Subject" onChange={e=>setSubject(e.target.value)}/>
-                                
                             </div>   
                         </div>
                         <div className="form-element-message">
