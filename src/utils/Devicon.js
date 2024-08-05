@@ -20,6 +20,7 @@ import { PostmanOriginalWordmark } from 'devicons-react';
 import { GithubOriginalWordmark } from 'devicons-react';
 import { VscodeOriginal } from 'devicons-react';
 import { GitOriginalWordmark } from 'devicons-react';
+import { ReactrouterOriginalWordmark } from 'devicons-react';
 
 
 export const HTMLIcon = () =>{
@@ -56,6 +57,10 @@ export const ReactIcon = () =>{
 
 export const ReduxIcon = () =>{
     return <><ReduxOriginal size={100}/></>
+}
+
+export const ReduxRouterIcon = () =>{
+    return <><ReactrouterOriginalWordmark size={100}/></>
 }
 
 export const AxiosIcon = () =>{

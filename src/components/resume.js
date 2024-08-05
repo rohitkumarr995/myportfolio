@@ -1,145 +1,219 @@
-import { useEffect, useState } from "react"
-import ArrowUp from "../utils/arrow-up"
+import { useEffect, useState } from "react";
+import ArrowUp from "../utils/arrow-up";
 
-const Resume = () =>{
+const Resume = () => {
+  const [opacity, setOpacity] = useState(false);
 
-    const [opacity, setOpacity] = useState(false)
+  useEffect(() => {
+    setOpacity(true);
+    window.scrollTo(0, 0);
+  }, []);
 
-    useEffect(()=>{
-        setOpacity(true)
-        window.scrollTo(0,0);
-    },[])
-
-    return (
-        <>
-            <section className= {`fade-in ${opacity ? 'visible' : ''} resume-main-container`}>
-                <div className="resume-headline-desc">
-                    <h2 id="headline-title">Resume</h2>
-                    <p id="headline-desc">Experienced Systems Engineer with expertise in automation testing and framework development using Selenium. Proven skills in creating and maintaining test scripts, logging bugs in Jira, and managing version control with GitHub. Previous roles include Software Test Engineer and Associate, with a solid foundation in project management and quality assurance.</p>
+  return (
+    <>
+      <section
+        className={`fade-in ${opacity ? "visible" : ""} resume-main-container`}
+      >
+        <div className="resume-headline-desc">
+          <h2 id="headline-title">Resume</h2>
+          <p id="headline-desc">
+            Passionate Frontend Developer with 2.5+ years of experience in
+            ReactJS, Redux Toolkit, HTML, CSS (SCSS), and JavaScript. Proficient
+            in API integration with Axios and version control using GitHub.
+            Skilled in testing with Jest and Postman to ensure high-quality,
+            user-friendly web applications.
+          </p>
+        </div>
+        <div className="resume-details-desc">
+          <aside className="left-side-panel">
+            <div className="basic-details">
+              <h2 style={{ fontWeight: "normal" }}>Summary</h2>
+              <div className="summary-details">
+                <h3 id="resume-name">Rohit Kumar</h3>
+                <p>
+                  Passionate Frontend Developer with over 2.5 years of
+                  experience in automation testing and expertise in ReactJS,
+                  Redux Toolkit, HTML, CSS (SCSS), and JavaScript. Skilled in
+                  API integration using Axios, and proficient with GitHub for
+                  version control. Adept at using Jest and Postman for testing
+                  to ensure robust code quality and deliver exceptional user
+                  experiences.
+                </p>
+                <ul id="basic-details-list">
+                  <li>Noida, Uttar Pradesh, India</li>
+                  <li>+91-7906916680</li>
+                  <li>rkrs227@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+            <div className="educational-details">
+              <h2 id="education-identifier" style={{ fontWeight: "normal" }}>
+                Education
+              </h2>
+              <div className="education-list">
+                <div className="educational-detail-1">
+                  <h2 className="courseid">Bachelor of Technology (B.Tech)</h2>
+                  <div className="course-details-1">
+                    <h3>
+                      <i>
+                        Dayalbagh Educational Institute, Deemed University, Agra
+                      </i>
+                    </h3>
+                    <div id="ed-date">2013 – 2017</div>
+                    <h4>CGPA - 7.18</h4>
+                  </div>
                 </div>
-                <div className="resume-details-desc">
-                    <aside className="left-side-panel">
-                        <div className="basic-details">
-                            <h2 style={{fontWeight:"normal"}}>Summary</h2>
-                            <div className="summary-details">
-                                <h3 id="resume-name">Rohit Kumar</h3>
-                                <p>With a strong foundation in QA testing, I am transitioning towards a full stack developer role. I possess extensive
-                                    expertise in ReactJS and ExpressJS and I am actively expanding my skill set to include a broader range of web
-                                    development technologies. Eager to leverage my skills in crafting engaging digital solutions, I am enthusiastic about
-                                    the promising path ahead in full stack development.
-                                </p>
-                                <ul id="basic-details-list">
-                                    <li>Noida, Uttar Pradesh, India</li>
-                                    <li>+91-7906916680</li>
-                                    <li>rkrs227@gmail.com</li>
-                                </ul>
-                            </div>
-                            
-                        </div>
-                        <div className="educational-details">
-                            <h2 id="education-identifier" style={{fontWeight:"normal"}}>Education</h2>
-                            <div className="education-list">
-                                <div className="educational-detail-1">
-                                    <h2 className="courseid">Bachelor of Technology (B.Tech)</h2>
-                                    <div className="course-details-1">
-                                        <h3><i>Dayalbagh Educational Institute, Deemed University, Agra</i></h3>
-                                        <div id='ed-date'>2013 – 2017</div>
-                                        <h4>CGPA - 7.18</h4>
-                                    </div>
-                                </div>
-                                <div className="educational-detail-2">
-                                    <h2 className="courseid">Higher Secondary Education (12th)</h2>
-                                    <div className="course-details-2">
-                                        <h3><i>REI Intermediate College, Agra</i></h3>
-                                        <div id='ed-date'>2011 – 2013</div>
-                                        <h4>Percentage - 89.8%</h4>
-                                    </div>
-                                </div>
-                                <div className="educational-detail-3">
-                                    <h2 className="courseid">Matriculation (10th)</h2>
-                                    <div className="course-details-3">
-                                        <h3><i>REI Intermediate College, Agra</i></h3>
-                                        <div id='ed-date'>2010 – 2011</div>
-                                        <h4>Percentage - 78%</h4>
-                                    </div>
-                                </div>
-                            </div>                          
-                        </div>
-                    </aside>
-                    <aside className="right-side-panel">
-                        <h2 style={{fontWeight:"normal"}}>Professional Experience</h2>
-                        <div className="experience-block">
-                            <h3 id="experience-title">Tata Consultancy Services</h3>
-                            <div id='ed-date'>02/2023 – Present</div>
-                            <div className="exp-details-1">
-                                <div id="designation">Systems Engineer</div>
-                                <ul>
-                                    <li>Creating automation test scripts and developing automation frameworks.</li>
-                                    <li>Developing scripts for Smoke and Regression suites using Selenium.</li>
-                                    <li>Executing and maintaining regression and smoke suites using Selenium in every release.</li>
-                                    <li>Collaborating with cross-functional teams to identify automation opportunities and streamline
-                                        testing workflows, resulting in a significant reduction in manual testing efforts.</li>
-                                    <li>Logging bugs and defects meticulously in issue tracking tool Jira for seamless collaboration with development teams.</li>
-                                    <li>Managing build scripts and test data effectively using version control system GitHub to ensure
-                                        reliability and traceability in testing processes.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="experience-block">
-                            <h3 id="experience-title">Foray Software Private Limited</h3>
-                            <div id='ed-date'>12/2021 – 01/2023</div>
-                            <div className="exp-details-2">
-                                <div id="designation">Software Test Engineer</div>
-                                <ul>
-                                    <li>Developed and executed automation test scripts to ensure the quality and reliability of software products.</li>
-                                    <li>Analyzed test results and reported defects using issue tracking tools like Jira, ensuring timely resolution.</li>
-                                    <li>Implemented best practices for test automation, including continuous integration and version control with tools like Git.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="experience-block">
-                            <h3 id="experience-title">Imtac India Private Limited</h3>
-                            <div id='ed-date'>09/2020 – 11/2021</div>
-                            <div className="exp-details-3">
-                                <div id="designation">Associate</div>
-                                <ul>
-                                    <li>Project initiation and meeting with clients for project roll out.</li>
-                                    <li>Coordinated project schedule, resources, equipment and information.</li>
-                                    <li>Undertook project task as required and provided administrative support as needed.</li>
-                                    <li>Ensured all documentation is maintained properly.</li>
-                                    <li>Daily, weekly and monthly report generation for customer on demand.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="experience-block">
-                            <h3 id="experience-title">Innodata India Private Limited</h3>
-                            <div id='ed-date'>07/2020 – 10/2020</div>
-                            <div className="exp-details-4">
-                                <div id="designation">Associate</div>
-                                <ul>
-                                    <li>Assisted in the development of project plans and timelines to ensure timely completion of project milestones.</li>
-                                    <li>Ensured all documentation was maintained properly.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="experience-block">
-                            <h3 id="experience-title">CG Power and Industrial Solutions Limited</h3>
-                            <div id='ed-date'>06/2017 – 02/2020</div>
-                            <div className="exp-details-5">
-                                <div id="designation">Associate</div>
-                                <ul>
-                                    <li>Inspected, verified and validated the parameters of product stages.</li>
-                                    <li>Initiated and implemented improvement actions.</li>
-                                    <li>Worked on Root Cause Analysis (RCA) for any non-conformity in product and process.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </aside>
+                <div className="educational-detail-2">
+                  <h2 className="courseid">
+                    Higher Secondary Education (12th)
+                  </h2>
+                  <div className="course-details-2">
+                    <h3>
+                      <i>REI Intermediate College, Agra</i>
+                    </h3>
+                    <div id="ed-date">2011 – 2013</div>
+                    <h4>Percentage - 89.8%</h4>
+                  </div>
                 </div>
-            </section>
-            <ArrowUp/>
-        </>
-    )
-}
+                <div className="educational-detail-3">
+                  <h2 className="courseid">Matriculation (10th)</h2>
+                  <div className="course-details-3">
+                    <h3>
+                      <i>REI Intermediate College, Agra</i>
+                    </h3>
+                    <div id="ed-date">2010 – 2011</div>
+                    <h4>Percentage - 78%</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <aside className="right-side-panel">
+            <h2 style={{ fontWeight: "normal" }}>Professional Experience</h2>
+            <div className="experience-block">
+              <h3 id="experience-title">Tata Consultancy Services</h3>
+              <div id="ed-date">02/2023 – Present</div>
+              <div className="exp-details-1">
+                <div id="designation">Systems Engineer</div>
+                <ul>
+                  <li>
+                    Creating automation test scripts and developing automation
+                    frameworks.
+                  </li>
+                  <li>
+                    Developing scripts for Smoke and Regression suites using
+                    Selenium.
+                  </li>
+                  <li>
+                    Executing and maintaining regression and smoke suites using
+                    Selenium in every release.
+                  </li>
+                  <li>
+                    Collaborating with cross-functional teams to identify
+                    automation opportunities and streamline testing workflows,
+                    resulting in a significant reduction in manual testing
+                    efforts.
+                  </li>
+                  <li>
+                    Logging bugs and defects meticulously in issue tracking tool
+                    Jira for seamless collaboration with development teams.
+                  </li>
+                  <li>
+                    Managing build scripts and test data effectively using
+                    version control system GitHub to ensure reliability and
+                    traceability in testing processes.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="experience-block">
+              <h3 id="experience-title">Foray Software Private Limited</h3>
+              <div id="ed-date">12/2021 – 01/2023</div>
+              <div className="exp-details-2">
+                <div id="designation">Software Test Engineer</div>
+                <ul>
+                  <li>
+                    Developed and executed automation test scripts to ensure the
+                    quality and reliability of software products.
+                  </li>
+                  <li>
+                    Analyzed test results and reported defects using issue
+                    tracking tools like Jira, ensuring timely resolution.
+                  </li>
+                  <li>
+                    Implemented best practices for test automation, including
+                    continuous integration and version control with tools like
+                    Git.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="experience-block">
+              <h3 id="experience-title">Imtac India Private Limited</h3>
+              <div id="ed-date">09/2020 – 11/2021</div>
+              <div className="exp-details-3">
+                <div id="designation">Associate</div>
+                <ul>
+                  <li>
+                    Project initiation and meeting with clients for project roll
+                    out.
+                  </li>
+                  <li>
+                    Coordinated project schedule, resources, equipment and
+                    information.
+                  </li>
+                  <li>
+                    Undertook project task as required and provided
+                    administrative support as needed.
+                  </li>
+                  <li>Ensured all documentation is maintained properly.</li>
+                  <li>
+                    Daily, weekly and monthly report generation for customer on
+                    demand.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="experience-block">
+              <h3 id="experience-title">Innodata India Private Limited</h3>
+              <div id="ed-date">07/2020 – 10/2020</div>
+              <div className="exp-details-4">
+                <div id="designation">Associate</div>
+                <ul>
+                  <li>
+                    Assisted in the development of project plans and timelines
+                    to ensure timely completion of project milestones.
+                  </li>
+                  <li>Ensured all documentation was maintained properly.</li>
+                </ul>
+              </div>
+            </div>
+            <div className="experience-block">
+              <h3 id="experience-title">
+                CG Power and Industrial Solutions Limited
+              </h3>
+              <div id="ed-date">06/2017 – 02/2020</div>
+              <div className="exp-details-5">
+                <div id="designation">Associate</div>
+                <ul>
+                  <li>
+                    Inspected, verified and validated the parameters of product
+                    stages.
+                  </li>
+                  <li>Initiated and implemented improvement actions.</li>
+                  <li>
+                    Worked on Root Cause Analysis (RCA) for any non-conformity
+                    in product and process.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <ArrowUp />
+    </>
+  );
+};
 
-export default Resume
+export default Resume;
